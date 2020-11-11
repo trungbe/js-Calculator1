@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script>
+        function tong() {
+            let num1 = parseInt(document.getElementById('num1').value);
+            let num2 = parseInt(document.getElementById('num2').value);
+            alert(num1 + num2);
+        }
+
+        function hieu() {
+            let num1 = parseInt(document.getElementById('num1').value);
+            let num2 = parseInt(document.getElementById('num2').value);
+            alert(num1 - num2);
+        }
+
+        function tich() {
+            let num1 = parseInt(document.getElementById('num1').value);
+            let num2 = parseInt(document.getElementById('num2').value);
+            alert(num1 * num2);
+        }
+
+        function thuong() {
+            let num1 = parseInt(document.getElementById('num1').value);
+            let num2 = parseInt(document.getElementById('num2').value);
+            alert(num1 / num2);
+        }
+    </script>
+</head>
+<body>
+<from>
+    <table>
+        <tr>
+            <td><input type="text" id="num1"></td>
+            <td><input type="text" id="num2"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="+" onclick="tong();">
+                <input type="button" value="-" onclick="hieu();">
+                <input type="button" value="*" onclick="tich();">
+                <input type="button" value="/" onclick="thuong()">
+            </td>
+        </tr>
+    </table>
+</from>
+</body>
+</html>
